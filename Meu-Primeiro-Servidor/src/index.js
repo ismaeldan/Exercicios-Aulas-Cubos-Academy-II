@@ -17,4 +17,6 @@ app.get('/array', (req, res) => {
   res.send(array)
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+  console.log('Servidor inicializado na porta 3000')
+})
