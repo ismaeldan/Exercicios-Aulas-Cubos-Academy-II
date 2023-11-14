@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Ola mundo')
 })
 
-app.get('/array', (req, res) => {
+app.get('/usuarios', (req, res) => {
   const array = [
     { id: 11, nome: 'joao', idade: 23 },
     { id: 2, nome: 'maria', idade: 18 },
