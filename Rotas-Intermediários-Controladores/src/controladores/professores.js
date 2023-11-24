@@ -15,6 +15,7 @@ const filtrarProfs = (req, res) => {
 }
 
 const procurarProfs = (req, res) => {
+  console.log('filtro de professor unico')
   const findProf = professores.find(professor => {
     return professor.id === Number(req.params.id)
   })
