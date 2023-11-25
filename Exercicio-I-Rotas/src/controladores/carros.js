@@ -6,13 +6,13 @@ const filtroCarro = (req, res) => {
   let resultado = carros
 
   if (marca) {
-    resultado = carros.filter(carro => {
+    resultado = resultado.filter(carro => {
       return carro.marca === marca
     })
   }
 
   if (cor) {
-    resultado = carros.filter(carro => {
+    resultado = resultado.filter(carro => {
       return carro.cor === cor
     })
   }
